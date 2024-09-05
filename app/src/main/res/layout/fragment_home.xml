@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    android:background="@drawable/home_bg2"
     tools:context=".Fragments.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -51,7 +51,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="180dp"
         android:scaleType="fitXY"
         android:layout_marginHorizontal="17dp"
         android:layout_marginTop="10dp"
@@ -64,7 +64,6 @@
         android:id="@+id/cns_body"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/search_grey_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

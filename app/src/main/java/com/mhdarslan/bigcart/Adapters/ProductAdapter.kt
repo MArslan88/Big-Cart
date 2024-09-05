@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.mhdarslan.bigcart.Models.ProductModel
 import com.mhdarslan.bigcart.R
@@ -21,6 +22,10 @@ class ProductAdapter(private val context: Context, private val productList: List
         val model: ProductModel = productList[position]
         holder.img.setImageResource(model.image_id)
         holder.title.text = model.product_title
+
+        holder.itemView.setOnClickListener{
+//            Toast.makeText(context, "Item Clicked!", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount(): Int = productList.size
