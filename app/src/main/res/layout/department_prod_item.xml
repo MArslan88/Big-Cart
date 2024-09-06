@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="75dp"
+    android:layout_width="60dp"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="5dp">
 
@@ -16,8 +16,8 @@
         app:layout_constraintTop_toTopOf="parent">
         <ImageView
             android:id="@+id/img"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:src="@drawable/department_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,10 +27,10 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/poppins_reg"
             android:text="Vegetables"
-            android:textSize="11dp"
+            android:textSize="10dp"
             android:textColor="@color/text_grey"
             app:layout_constraintEnd_toEndOf="@+id/img"
             app:layout_constraintStart_toStartOf="@+id/img"

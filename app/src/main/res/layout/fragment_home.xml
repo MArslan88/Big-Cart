@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/home_bg2"
     tools:context=".Fragments.HomeFragment">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cns_header"
@@ -18,18 +19,19 @@
         <EditText
             android:id="@+id/edtSearch"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
             android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/edt_search_bg"
             android:drawableLeft="@drawable/ic_search"
             android:drawablePadding="15dp"
-            android:textColor="@color/text_grey"
-            android:paddingEnd="40dp"
             android:hint="Search keywords"
             android:maxLines="1"
+            android:textSize="13dp"
             android:paddingLeft="10dp"
+            android:paddingEnd="40dp"
             android:singleLine="true"
+            android:textColor="@color/text_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -39,8 +41,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="14dp"
-            android:padding="10dp"
             android:background="@color/trans"
+            android:padding="10dp"
             android:src="@drawable/ic_options"
             app:layout_constraintBottom_toBottomOf="@+id/edtSearch"
             app:layout_constraintEnd_toEndOf="@+id/edtSearch"
@@ -52,9 +54,9 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:scaleType="fitXY"
         android:layout_marginHorizontal="17dp"
         android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
         android:src="@drawable/banner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,16 +83,14 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_featured"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_department" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

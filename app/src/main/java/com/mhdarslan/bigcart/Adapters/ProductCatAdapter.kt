@@ -7,26 +7,29 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mhdarslan.bigcart.Models.CategoryModel
 import com.mhdarslan.bigcart.R
 
-class DepartmentCatAdapter(private val context: Context, private val categoryList: List<CategoryModel>) :
-    RecyclerView.Adapter<DepartmentCatAdapter.ViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup,viewType: Int): DepartmentCatAdapter.ViewHolder {
-        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.department_cat_item, parent, false)
-        )
+class ProductCatAdapter(private val context: Context, private val categoryList: List<CategoryModel> ) :
+    RecyclerView.Adapter<ProductCatAdapter.ViewHolder>() {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): ProductCatAdapter.ViewHolder {
+        return ViewHolder(
+            LayoutInflater.from(parent.context).inflate(R.layout.department_cat_item, parent, false))
     }
 
-    override fun onBindViewHolder(holder: DepartmentCatAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ProductCatAdapter.ViewHolder, position: Int) {
         val model: CategoryModel = categoryList[position]
 
         holder.title.text = model.title
-        holder.rv_product.layoutManager = GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false)
+        holder.rv_product.layoutManager = GridLayoutManager(context, 2, LinearLayoutManager.VERTICAL, false)
 
-        val productAdapter = DepartmentProdAdapter(context, model.productList)
+        val productAdapter = ProductAdapter(context, model.productList)
         holder.rv_product.adapter = productAdapter
-
     }
 
     override fun getItemCount(): Int = categoryList.size

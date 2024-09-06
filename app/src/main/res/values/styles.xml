@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom style for TextView -->
+    <style name="PriceTextStyle">
+        <item name="android:textColor">@color/text_parrot_green</item>
+        <item name="android:textSize">@dimen/price_text</item>
+        <item name="android:fontFamily">@font/poppins_med</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+    </style>
+
+    <!-- Custom style for TextView -->
+    <style name="ProductTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/prod_text</item>
+        <item name="android:fontFamily">@font/poppins_sem_bold</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+    </style>
+</resources>

@@ -11,7 +11,6 @@
     <color name="primary">#2299D4</color>
     <color name="textBgLightGray">#F2F2F2</color>
     <color name="textPendingGrey">#B7B5B5</color>
-    <color name="rulerGray">#CEC8C8</color>
     <color name="etBgLightGray">#C2C2C2</color>
     <color name="loginEtHintLightGray">#C2C2C2</color>
     <color name="etHintLightGray">#B1B1B1</color>
@@ -21,4 +20,7 @@
     <color name="trans">#00FFFFFF</color>
     <color name="search_grey_bg">#F4F5F9</color>
     <color name="text_grey">#868889</color>
+    <color name="text_parrot_green">#6CC51D</color>
+
+    <color name="ruler_grey">#EBEBEB</color>
 </resources>
