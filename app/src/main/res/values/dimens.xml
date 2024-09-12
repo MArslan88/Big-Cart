@@ -3,4 +3,5 @@
     <dimen name="price_text">12dp</dimen>
     <dimen name="prod_text">13dp</dimen>
     <dimen name="toolbar_text">14dp</dimen>
+    <dimen name="depart_text">10dp</dimen>
 </resources>
