@@ -1,3 +1,7 @@
 package com.mhdarslan.bigcart.Models
 
-data class CategoryModel(val title: String, val productList: List<ProductModel>)
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class CategoryModel(val title: String, val productList: List<ProductModel>) : Parcelable

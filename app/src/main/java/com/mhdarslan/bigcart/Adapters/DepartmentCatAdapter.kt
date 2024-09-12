@@ -1,6 +1,8 @@
 package com.mhdarslan.bigcart.Adapters
 
 import android.content.Context
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +10,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.mhdarslan.bigcart.Activities.CategoriesActivity
 import com.mhdarslan.bigcart.Models.CategoryModel
 import com.mhdarslan.bigcart.R
 
@@ -26,6 +29,13 @@ class DepartmentCatAdapter(private val context: Context, private val categoryLis
 
         val productAdapter = DepartmentProdAdapter(context, model.productList)
         holder.rv_product.adapter = productAdapter
+
+        holder.btn_forward.setOnClickListener{
+            for (product in model.productList) {
+                Log.d("Category Product Info", "Title: ${product.product_title}, Price: ${product.product_price}, Size: ${product.product_size}")
+            }
+            context.startActivity(Intent(context, CategoriesActivity::class.java).putExtra("categoryList", ArrayList(categoryList)))
+        }
 
     }
 

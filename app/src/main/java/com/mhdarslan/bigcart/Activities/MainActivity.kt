@@ -6,7 +6,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation.findNavController
 import com.mhdarslan.bigcart.R
 
-class MainActivity : BaseActivity() {
+class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

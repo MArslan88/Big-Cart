@@ -65,13 +65,13 @@ class HomeFragment : Fragment() {
     }
 
     private fun departments() {
-        val departmentList: List<CategoryModel> = departmentData()
+        val departmentList: ArrayList<CategoryModel> = departmentData()
         val departmentCatAdapter = DepartmentCatAdapter(requireContext(), departmentList)
         rv_department.adapter = departmentCatAdapter
     }
 
-    private fun departmentData(): List<CategoryModel> {
-        val departCatList = mutableListOf<CategoryModel>()
+    private fun departmentData(): ArrayList<CategoryModel> {
+        val departCatList = ArrayList<CategoryModel>()
         val departList = mutableListOf<ProductModel>()
 
         // product list
