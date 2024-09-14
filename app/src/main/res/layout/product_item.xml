@@ -65,6 +65,7 @@
                     style="@style/ProductTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
                     android:layout_marginTop="3dp"
                     android:text="Fresh Peach"
                     app:layout_constraintEnd_toEndOf="@+id/prod_img"

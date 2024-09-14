@@ -16,6 +16,8 @@
     <color name="etHintLightGray">#B1B1B1</color>
     <color name="scanEdtGray">#F5F3F3</color>
     <color name="etStrokeBlue">#14648C</color>
+    <color name="themeDarkGreen">#6CC51D</color>
+    <color name="themeLightGreen">#AEDC81</color>
 
     <color name="trans">#00FFFFFF</color>
     <color name="search_grey_bg">#F4F5F9</color>

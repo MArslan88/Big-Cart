@@ -4,4 +4,5 @@
     <dimen name="prod_text">13dp</dimen>
     <dimen name="toolbar_text">14dp</dimen>
     <dimen name="depart_text">10dp</dimen>
+    <dimen name="total_text">18dp</dimen>
 </resources>
