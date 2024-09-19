@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="$56.7"
+                android:text="$0.0"
                 style="@style/PriceTextStyle"
                 android:textColor="@color/text_grey"/>
 
@@ -159,7 +159,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="$1.6"
+                android:text="$0.0"
                 style="@style/totalTextStyle"
                 android:layout_marginHorizontal="10dp"/>
 
