@@ -42,7 +42,7 @@ class ProductAdapter(private val context: Context, private val productList: List
                 cartModelList.forEach {
                     if(it.itemName.equals(model.product_title)){
                         IS_SELECTED = true
-                        Toast.makeText(context, "Item is already selected!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "${model.product_title} is already selected!", Toast.LENGTH_SHORT).show()
                     }
                 }
                 if(!IS_SELECTED){
@@ -58,7 +58,7 @@ class ProductAdapter(private val context: Context, private val productList: List
     }
 
     private fun addItem(model: ProductModel) {
-        Toast.makeText(context, "Item Clicked!", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(context, "Item Clicked!", Toast.LENGTH_SHORT).show()
         val cartId = UUID.randomUUID().toString()
 
         dbHandler.addCartItems(CartModel(

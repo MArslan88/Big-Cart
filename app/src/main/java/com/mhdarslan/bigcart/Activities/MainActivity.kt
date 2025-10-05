@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.mhdarslan.bigcart.DBUtils.DbHandler
 import com.mhdarslan.bigcart.Fragments.HomeFragment
 import com.mhdarslan.bigcart.R
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
 //        navController = findNavController(this, R.id.nav_host_fragment_content_home_page)
 //        navController.navigate(R.id.homeFragment)

@@ -114,6 +114,14 @@ public class DbHandler extends SQLiteOpenHelper {
         db.execSQL("VACUUM");
         db.close();
     }
+    // Deleting single item
+    public void deleteitem(CartModel cartModel) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        db.delete(TABLE_CART, COL_CART_ID + " = ?",
+                new String[]{String.valueOf(cartModel.getId())});
+        db.close();
+    }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
