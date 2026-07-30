@@ -149,7 +149,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="5"
+                android:layout_weight="4"
                 android:text="Total"
                 style="@style/totalTextStyle"
                 android:layout_marginHorizontal="10dp"/>
@@ -157,7 +157,7 @@
                 android:id="@+id/tv_total"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:gravity="end"
                 android:text="$0.0"
                 style="@style/totalTextStyle"
